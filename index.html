@@ -1,140 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RAMYA KVM | Data Engineer & AI Researcher</title>
+  <meta name="description" content="Ramya KVM's Data Engineering portfolio featuring PySpark, SQL, Databricks, Delta Lake and healthcare data projects.">
+  <title>Ramya KVM | Data Engineer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-  <!-- Navigation Bar -->
-  <header>
+<body>  <header>
     <div class="brand-name">RAMYA KVM</div>
-    <nav>
-      <a href="#data-engineering">Data Engineering</a>
-      <a href="#quantum-ai">AI & Quantum Research</a>
-      <a href="#experience">Experience</a>
+    <nav aria-label="Main navigation">
       <a href="#about">About</a>
+      <a href="#data-engineering">Data Engineering</a>
+      <a href="#quantum-ai">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>RAMYA KVM | Data Engineer & AI Research Professional</h1>
-    <p class="subtitle">Medallion Architecture | PySpark & Databricks | Qiskit</p>
-    <div class="hero-links">
-      <a href="#data-engineering">[Selected Pipelines]</a>
-      <a href="#quantum-ai">[Selected Research]</a>
-      <a href="https://linkedin.com/in/kotha-ramya" target="_blank">[LinkedIn]</a>
-      <a href="https://github.com/kvmramya" target="_blank">[GitHub]</a>
+  </header>  <main>
+    <section class="hero">
+      <h1>Ramya KVM</h1>
+      <p class="subtitle">Data Engineer | PySpark | SQL | Databricks | Delta Lake | Azure</p>
+      <p>Building reliable data pipelines, with a focus on healthcare, neuroscience and analytics.</p>
+      <div class="hero-links">
+        <a href="#data-engineering">View Projects</a>
+        <a href="https://linkedin.com/in/kotha-ramya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/kvmramya" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:kvm.ramya@gmail.com">Email Me</a>
+      </div>
+    </section><section aria-labelledby="about">
+  <h2 class="section-title" id="about">About Me</h2>
+  <div class="card">
+    <p>I am an engineering professional building my career in Data Engineering, with an academic background in Electronics and Instrumentation Engineering and Embedded Systems.</p>
+    <p>My current focus is developing end-to-end data pipelines using Python, SQL, PySpark, Databricks and Delta Lake. My portfolio demonstrates hands-on work in data ingestion, Medallion Architecture, data quality validation, incremental processing and analytical data models.</p>
+    <p>I am particularly interested in applying dependable data engineering practices to healthcare, neuroscience and genomics datasets.</p>
+    <div class="badge-group">
+      <span class="badge">Python</span>
+      <span class="badge">SQL</span>
+      <span class="badge">PySpark</span>
+      <span class="badge">Apache Spark</span>
+      <span class="badge">Databricks</span>
+      <span class="badge">Delta Lake</span>
+      <span class="badge">ETL / ELT</span>
+      <span class="badge">Data Quality</span>
+      <span class="badge">Azure</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Data Engineering Projects Section -->
-  <h2 class="section-title" id="data-engineering">Data Engineering Portfolio</h2>
+<section>
+  <h2 class="section-title" id="data-engineering">Featured Data Engineering Projects</h2>
   <div class="grid-3">
-        <div class="card">
+
+    <div class="card">
+      <h3>Healthcare Data Engineering Pipeline</h3>
+      <p>An end-to-end healthcare data engineering project integrating patient, doctor and admission datasets. Demonstrates Bronze, Silver and Gold processing, PySpark transformations, data quality checks, Delta Lake MERGE operations and audit logging.</p>
+      <div class="badge-group">
+        <span class="badge">PySpark</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Delta Lake</span>
+        <span class="badge">Data Quality</span>
+        <span class="badge">Incremental Loading</span>
+      </div>
+      <a class="project-link" href="https://github.com/kvmramya/healthcare-data-engineering-pipeline" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+    </div>
+
+    <div class="card">
       <h3>Neuro-Insight Lakehouse</h3>
-      <p>End-to-end Databricks Lakehouse pipeline for synthetic neurological telemetry using Medallion Architecture (Bronze, Silver, Gold), with data quality checks, quarantine handling, and audit logging.</p>
+      <p>A project using synthetic neurological telemetry data to demonstrate a Databricks Lakehouse pipeline with Bronze, Silver and Gold layers, validation, quarantine handling and audit logging. The data and rules are for engineering demonstration, not clinical use.</p>
       <div class="badge-group">
         <span class="badge">PySpark</span>
         <span class="badge">Databricks</span>
         <span class="badge">Delta Lake</span>
         <span class="badge">Data Quality</span>
       </div>
-      <a class="project-link" href="https://github.com/kvmramya/neuro-insight-lakehouse" target="_blank" rel="noopener">View on GitHub →</a>
-    </div>
-    <div class="card">
-      <h3>ShopStream Lakehouse Pipeline</h3>
-      <p>Built an end-to-end e-commerce Lakehouse on Databricks processing 6 months of data across Bronze, Silver, and Gold Delta Lake layers using idempotent COPY INTO and Auto Loader streaming.</p>
-      <div class="badge-group">
-        <span class="badge">PySpark</span>
-        <span class="badge">Databricks</span>
-        <span class="badge">Delta Lake</span>
-        <span class="badge">Spark SQL</span>
-      </div>
+      <a class="project-link" href="https://github.com/kvmramya/neuro-insight-lakehouse" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
     </div>
 
     <div class="card">
-      <h3>Healthcare Data Pipeline</h3>
-      <p>Integrated patient, doctor, and admission datasets via PySpark transformations. Implemented data quality checks and Delta Lake MERGE (UPSERT) operations with audit logging.</p>
+      <h3>ShopStream Lakehouse Pipeline</h3>
+      <p>A retail data engineering project demonstrating data ingestion, cleaning, deduplication, Delta Lake transformations and business analytics across Bronze, Silver and Gold layers.</p>
       <div class="badge-group">
-        <span class="badge">PySpark</span>
+        <span class="badge">Databricks</span>
         <span class="badge">Delta Lake</span>
-        <span class="badge">MERGE / UPSERT</span>
-        <span class="badge">SQL</span>
+        <span class="badge">Spark SQL</span>
+        <span class="badge">Data Transformation</span>
       </div>
+      <a class="project-link" href="https://github.com/kvmramya/shopstream-lakehouse-pipeline" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
     </div>
 
     <div class="card">
       <h3>Shakti Mentorship Pipeline</h3>
-      <p>Developing an end-to-end data pipeline under the Women in Big Data "Shakti" Mentorship Program, focusing on scalable ELT patterns and cloud data warehouse integration.</p>
+      <p>Data engineering work associated with the Women in Big Data Shakti Mentorship Program. This section will be updated with the final pipeline scope, implementation details and outcomes as the project is completed.</p>
       <div class="badge-group">
-        <span class="badge">ETL / ELT</span>
         <span class="badge">Python</span>
         <span class="badge">PySpark</span>
+        <span class="badge">ETL / ELT</span>
       </div>
     </div>
 
   </div>
+</section>
 
-  <!-- Quantum & AI Research Section -->
-  <h2 class="section-title" id="quantum-ai">Quantum Optimization & AI Research</h2>
+<section>
+  <h2 class="section-title" id="quantum-ai">Quantum Computing & AI Research</h2>
   <div class="grid-2">
-    
+
     <div class="card">
       <h3>Breast Cancer Detection via Quanvolutional Networks</h3>
-      <p>Developed a deep learning model integrating quantum convolution layers with classical networks during the IIT Delhi CEP Program to explore hybrid optimization advantages in medical imaging.</p>
+      <p>A hybrid quantum-classical machine learning project developed during the IIT Delhi CEP programme, exploring quantum convolution layers for a medical-imaging classification task.</p>
       <div class="badge-group">
         <span class="badge">Qiskit</span>
         <span class="badge">TensorFlow</span>
         <span class="badge">Scikit-learn</span>
-        <span class="badge">MLflow</span>
       </div>
     </div>
 
     <div class="card">
-      <h3>Travelling Salesman Problem with QPE Optimization</h3>
-      <p>Implemented a quantum optimization model using Quantum Phase Estimation (QPE) in Qiskit to solve NP-Hard routing optimization problems efficiently.</p>
+      <h3>Travelling Salesman Problem with QPE</h3>
+      <p>A Qiskit project exploring quantum phase estimation concepts in the context of a travelling-salesperson optimisation problem.</p>
       <div class="badge-group">
         <span class="badge">Qiskit</span>
         <span class="badge">Python</span>
-        <span class="badge">Optimization</span>
+        <span class="badge">Quantum Algorithms</span>
       </div>
     </div>
 
   </div>
+</section>
 
-  <!-- Experience & Qualifications Section -->
-  <h2 class="section-title" id="experience">Experience & Background</h2>
-  <div class="grid-3">
-    
+<section>
+  <h2 class="section-title" id="experience">Experience & Education</h2>
+  <div class="grid-2">
+
     <div class="card">
       <h3>Professional Experience</h3>
-      <p><strong>Vocational Trainer / ATL Instructor</strong><br>Kendriya Vidyalaya Tirumalagiri (Jul 2025 – Present)</p>
-      <p><strong>Trainee Engineer – AI & Data Science</strong><br>Cloud Seals Pvt. Ltd. (Dec 2023 – Apr 2024)</p>
-      <p><strong>Subject Matter Expert – Engineering</strong><br>Chegg India (2021 – 2023)</p>
+      <p><strong>Vocational Instructor / Trainer</strong><br>Kendriya Vidyalaya Tirumalagiri, Hyderabad<br>July 2025 – August 2026</p>
+      <p><strong>Trainee Engineer – AI & Data Science</strong><br>Cloud Seals Pvt. Ltd. | December 2023 – April 2024</p>
+      <p><strong>Subject Matter Expert – Engineering</strong><br>Chegg India | 2021 – 2023</p>
     </div>
 
     <div class="card">
-      <h3>Certifications & Education</h3>
-      <p><strong>IIT Delhi CEP</strong> – Quantum Computing & Machine Learning</p>
-      <p><strong>Google Data Analytics</strong> Professional Certificate</p>
-      <p><strong>M.Tech (Embedded Systems)</strong> – CMR CET</p>
-      <p><strong>B.E. (ECE)</strong> – GITAM College of Engineering</p>
-    </div>
-
-    <div class="card" id="about">
-      <h3>About Me</h3>
-      <p>Data professional transitioning into Big Data Engineering with strong expertise in PySpark, Databricks, and Delta Lake medallion pipelines. Academic background in ECE and Embedded Systems (M.Tech) with research experience in Quantum Optimization through IIT Delhi.</p>
+      <h3>Education & Certifications</h3>
+      <p><strong>M.Tech – Quantum AI & Computing</strong><br>IIIT Dharwad | Pursuing</p>
+      <p><strong>M.Tech – Embedded Systems</strong><br>CMR College of Engineering & Technology</p>
+      <p><strong>B.E. – Electronics and Instrumentation Engineering</strong><br>GITAM College of Engineering</p>
+      <p><strong>IIT Delhi CEP</strong> – Quantum Computing</p>
+      <p><strong>Google Data Analytics</strong> – Professional Certificate</p>
     </div>
 
   </div>
+</section>
 
-  <footer>
-    <p>© RAMYA KVM | Hosted on GitHub Pages</p>
-  </footer>
+<section>
+  <h2 class="section-title" id="contact">Contact</h2>
+  <div class="card">
+    <p>If you are hiring for data engineering roles or would like to discuss my projects, please get in touch.</p>
+    <p><strong>Email:</strong> <a href="mailto:kvm.ramya@gmail.com">kvm.ramya@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kotha-ramya" target="_blank" rel="noopener noreferrer">linkedin.com/in/kotha-ramya</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/kvmramya" target="_blank" rel="noopener noreferrer">github.com/kvmramya</a></p>
+  </div>
+</section>
 
-</body>
+  </main>  <footer>
+    <p>© RAMYA KVM | Data Engineering Portfolio | Hosted on GitHub Pages</p>
+  </footer></body>
 </html>
